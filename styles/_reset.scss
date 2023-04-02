@@ -1,0 +1,107 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+
+:root {
+  --p-color: #161f38;
+  --socail-color: #161f38;
+
+  --heading-color: #161f38;
+
+  --menu-color: #161f38;
+
+  --blue: #0057ff;
+  --dark-blue: #00008B;
+
+
+  --gray: #575861;
+  --border-gray: #DADCE5;
+
+  --white: #fff;
+  --font-primary: "Work Sans", sans-serif;
+
+
+  --shadow-sm:  rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+
+
+
+
+}
+
+
+$break-sm-mobile: 320px;
+$break-mobile: 480px;
+$break-tablet: 768px;
+$break-laptop: 992px;
+$break-dekstop: 1200px;
+
+
+  // xs: 0,
+  // sm: 576px,
+  // md: 768px,
+  // lg: 992px,
+  // xl: 1200px,
+  // xxl: 1400px
+
+
+
+
+
+
+body {
+  font-family: var(--font-primary);
+  overflow-x: hidden;
+}
+
+
+button{
+  font-family: var(--font-primary) !important;
+  cursor: pointer;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--p-color);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+span {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+
+input{
+  padding: 10px 10px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid var(--border-gray);
+  font-family: inherit;
+  &:focus{
+    outline:1px solid var(--blue);
+    border-color: transparent;
+  }
+}
+
+
+

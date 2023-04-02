@@ -1,0 +1,17 @@
+
+
+.banner{
+
+  .right{
+   .img{  
+     width: 400px;
+      height: 400px;
+     img{
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+   }
+  }
+}
