@@ -1,0 +1,17 @@
+@import "./reset";
+@import "./pure";
+@import "./components/singin";
+
+@import "../components/Header/header";
+@import "../components/Socail/socail";
+@import "../components/Banner/banner";
+
+@import "../components/Post/post";
+@import "../components/footer/footer";
+
+@import './responsive';
+
+.bg-blue {
+  background-color: var(--blue);
+}
+

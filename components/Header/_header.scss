@@ -1,0 +1,79 @@
+header {
+  padding: 15px 0;
+  height: 50px;
+  .logo {
+    a {
+      color: var(--dark-blue);
+    }
+  }
+  .menu-wrapper {
+    display: none;
+    &.show {
+      display: block;
+      .show-menu {
+        position: fixed;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        box-shadow: var(--shadow-sm);
+        background-color: white;
+        width: 200px;
+        top: 60px;
+        border-radius: 5px;
+        right: 20px;
+        flex-direction: column;
+        nav {
+          a {
+            display: block;
+            padding: 10px 10px !important;
+          }
+        }
+        .right {
+          flex-direction: column;
+          button {
+            display: none;
+          }
+          .signup-btn {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  nav {
+    a {
+      color: var(--menu-color);
+      font-weight: 500;
+      padding: 5px 15px;
+    }
+  }
+
+  .right {
+    a:first-child {
+      font-weight: 500;
+      color: var(--menu-color);
+    }
+    .signup-btn {
+      background-color: var(--blue);
+      color: var(--white);
+      border-radius: 3px;
+      transition: 0.3s;
+      &:hover {
+        background-color: var(--dark-blue);
+      }
+    }
+    button {
+      font-weight: 500;
+      &:nth-child(3) {
+        padding: 0;
+      }
+      &:nth-child(4) {
+        padding: 0;
+      }
+    }
+  }
+
+  .hamburger {
+    font-size: 30px;
+  }
+}
