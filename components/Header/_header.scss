@@ -8,8 +8,17 @@ header {
   }
   .menu-wrapper {
     display: none;
+
+    nav {
+      a {
+        color: var(--menu-color);
+        font-weight: 600;
+        padding: 10px 10px !important;
+      }
+    }
     &.show {
       display: block;
+
       .show-menu {
         position: fixed;
         padding-top: 30px;
@@ -24,7 +33,6 @@ header {
         nav {
           a {
             display: block;
-            padding: 10px 10px !important;
           }
         }
         .right {
@@ -37,14 +45,6 @@ header {
           }
         }
       }
-    }
-  }
-
-  nav {
-    a {
-      color: var(--menu-color);
-      font-weight: 500;
-      padding: 5px 15px;
     }
   }
 

@@ -2,7 +2,6 @@
   .m-#{$i} {
     margin: #{$i}px;
   }
-
   .ml-#{$i} {
     margin-left: #{$i}px;
   }
@@ -26,7 +25,7 @@
   }
 
   .p-#{$i} {
-    padding: #{$i}px;
+    padding: #{$i}px !important;
   }
   .pl-#{$i} {
     padding-left: #{$i}px;
@@ -41,12 +40,12 @@
     padding-top: #{$i}px;
   }
   .py-#{$i} {
-    padding-top: #{$i}px;
-    padding-bottom: #{$i}px;
+    padding-top: #{$i}px !important;
+    padding-bottom: #{$i}px !important;
   }
   .px-#{$i} {
-    padding-left: #{$i}px;
-    padding-right: #{$i}px;
+    padding-left: #{$i}px !important;
+    padding-right: #{$i}px !important;
   }
 }
 
@@ -64,7 +63,7 @@
 
 @for $i from 100 through 900 {
   .fw-#{$i} {
-    font-weight: #{$i};
+    font-weight: #{$i} !important;
   }
 }
 
@@ -107,6 +106,14 @@ $red: #ff0000;
     height: #{$i}px !important;
   }
 }
+@for $i from 0 through 800 {
+  .max-w-#{$i} {
+    max-width: #{$i}px !important;
+  }
+  .max-h-#{$i} {
+    max-height: #{$i}px !important;
+  }
+}
 
 @for $i from 1 through 5 {
   .line-clamp-#{$i} {
@@ -118,9 +125,29 @@ $red: #ff0000;
   }
 }
 
+@for $i from 0 through 5 {
+  .transition-#{$i} {
+    transition: #{$i / 10}s;
+  }
+}
+@for $i from 0 through 10 {
+  .opacity-#{$i} {
+    opacity: #{$i / 10};
+  }
+}
 
 
-
-
-
-
+@for $i from 0 through 100 {
+  .top-#{$i} {
+    top: #{$i}px;
+  }
+  .left-#{$i} {
+    left: #{$i}px;
+  }
+  .right-#{$i} {
+    right: #{$i}px;
+  }
+  .bottom-#{$i} {
+    bottom: #{$i}px;
+  }
+}

@@ -6,9 +6,9 @@ const Post1 = () => {
   return (
     <>
       <div className='flex gap-x-20 post-card mb-40'>
-        <div className='w-200'>
+        <div className=''>
           <Link href="/" >
-            <img className='w-full h-180 br-5 object-cover' src="https://images.pexels.com/photos/5076531/pexels-photo-5076531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+            <img className='w-210 h-210 br-5 object-cover' src="https://images.pexels.com/photos/5076531/pexels-photo-5076531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
           </Link>
         </div>
 
@@ -22,6 +22,9 @@ const Post1 = () => {
           </div>
         </div>
       </div>
+
+
+
       <div className='flex gap-x-20 post-card'>
         <div className='w-200'>
           <img className='w-full h-180 br-5 object-cover' src="https://images.pexels.com/photos/5076531/pexels-photo-5076531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />

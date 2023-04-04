@@ -9,9 +9,54 @@
 @import "../components/Post/post";
 @import "../components/footer/footer";
 
-@import './responsive';
+@import "./responsive";
+
+@import './test';
 
 .bg-blue {
   background-color: var(--blue);
 }
 
+.text-primary {
+  color: var(--primary-color);
+}
+
+$colors: (
+  red: var(--red),
+  green: var(--green),
+  blue: var(--blue),
+  dark-blue: var(--dark-blue),
+  light-gray: var(--light-gray),
+  aliceblue: aliceblue,
+  white: #fff,
+);
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+}
+
+
+// hover
+
+.hover\:bg-red:hover {
+  background-color: red;
+}
+
+.hover\:bg-dark-blue:hover {
+  background-color: var(--dark-blue);
+}
+
+.hover\:text-blue:hover {
+  color: var(--blue) !important;
+}
+
+.hover\:text-dark-blue:hover {
+  color: var(--dark-blue) !important;
+}

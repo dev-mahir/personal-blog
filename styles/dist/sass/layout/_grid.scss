@@ -25,4 +25,7 @@
   .gap-x-#{$i} {
     column-gap: #{$i}px;
   }
+  .gap-y-#{$i} {
+    row-gap: #{$i}px;
+  }
 }
