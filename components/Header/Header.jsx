@@ -33,7 +33,9 @@ const Header = () => {
               {/* <Link href="/signin" className="btn" >Sign in</Link>
               <Link href="/signup" className="btn signup-btn mr-20" >Sign up</Link> */}
               <div className='position-relative '>
-                <button onClick={() => setUser(!user)} className='border-0 bg-transparent'><img className='w-30 h-30 br-full' src="https://images.pexels.com/photos/5076531/pexels-photo-5076531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /></button>
+                <button onClick={() => setUser(!user)} className='border-0 bg-transparent'>
+              
+                </button>
 
                 {user && <div className='position-absolute right-0 top-40 bg-white shadow-sm p-15 br-5'>
                   <h5>Md Mahir</h5>

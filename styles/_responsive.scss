@@ -1,7 +1,12 @@
-@media screen and (max-width: 1440px) {
-  .container {
-    max-width: 1200px;
-  }
+
+
+
+
+
+
+
+@media screen and (max-width: $xl) {
+
   // header
   header {
     .menu-wrapper {
@@ -13,11 +18,11 @@
   }
 }
 
+
+
 // 992
-@media screen and (max-width: $break-laptop) {
-  .container {
-    max-width: 960px;
-  }
+@media screen and (max-width: $lg) {
+
   // header
   header {
     .menu-wrapper {
@@ -30,10 +35,9 @@
 }
 
 //768
-@media screen and (max-width: $break-tablet) {
-  .container {
-    max-width: 720px;
-  }
+@media screen and (max-width: $lg) {
+
+
 
   //banner
   .banner {
@@ -83,12 +87,9 @@
 
 
 
-
 // 480
-@media screen and (max-width: $break-mobile) {
-  .container {
-    max-width: 320px;
-  }
+@media screen and (max-width: $sm) {
+
 
   //banner
   .banner {

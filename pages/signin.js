@@ -41,7 +41,7 @@ const Signin = () => {
 
 
         <div className='h-screen'>
-          <img className='w-full h-full' src="https://arun.gbjsolution.com/content/images/size/w1000/2021/05/yang-shuo-uYHYGgvkz_Y-unsplash.jpg" alt="" />
+          {/* <img className='w-full h-full' src="https://arun.gbjsolution.com/content/images/size/w1000/2021/05/yang-shuo-uYHYGgvkz_Y-unsplash.jpg" alt="" /> */}
         </div>
       </div>
 

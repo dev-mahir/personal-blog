@@ -1,107 +1,21 @@
-// Define a mixin for generating responsive utility classes
 
-@mixin responsive-utilities($breakpoint, $max-width, $device) {
-  @media (max-width: #{$breakpoint}) {
-    .#{$device}\:-.container {
-      max-width: $max-width;
-      padding: 0;
+
+button{
+  border: none;
+  background-color: transparent;
+}
+
+
+
+@mixin gap ( $device){
+  @for $i from 0 through 50{
+    .#{$device}:\gap-x-#{$i}{
+      column-gap: #{$i}px;
     }
-
-    
-    // text align
-    .#{$device}\:text {
-      &-center {
-        text-align: center;
-      }
-      &-left {
-        text-align: left;
-      }
-      &-right {
-        text-align: end;
-      }
-    }
-
-    // display
-    .#{$device}\:none {
-      display: none;
-    }
-
-    // position
-    .#{$device}\:position {
-      &-relative {
-        position: relative;
-      }
-      &-absolute {
-        position: absolute;
-      }
-      &-fixed {
-        position: fixed;
-      }
-      &-sticky {
-        position: sticky;
-      }
-      &-static {
-        position: static;
-      }
-    }
-
-    .#{$device}\:block {
-      display: block;
-    }
-
-    // grid
-    @for $i from 1 through 12 {
-      .#{$device}\:-.grid-cols-#{$i} {
-        grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
-      }
-    }
-
-    // padding-margin
-    @for $i from 0 through 150 {
-      .#{$device}\:-px-#{$i} {
-        padding-left: #{$i}px !important;
-        padding-right: #{$i}px !important;
-      }
-      .#{$device}\:-.py-#{$i} {
-        padding-top: #{$i}px !important;
-        padding-bottom: #{$i}px !important;
-      }
-      .#{$device}\:-.pt-#{$i} {
-        padding-top: #{$i}px !important;
-      }
-      .#{$device}\:-.pb-#{$i} {
-        padding-bottom: #{$i}px !important;
-      }
-      .#{$device}\:-.pr-#{$i} {
-        padding-right: #{$i}px !important;
-      }
-      .pl-#{$i} {
-        padding-left: #{$i}px !important;
-      }
-      .#{$device}\:-.mx-#{$i} {
-        margin-left: #{$i}px !important;
-        margin-right: #{$i}px !important;
-      }
-      .#{$device}\:-.my-#{$i} {
-        margin-top: #{$i}px !important;
-        margin-bottom: #{$i}px !important;
-      }
-      .#{$device}\:-.mt-#{$i} {
-        margin-top: #{$i}px !important;
-      }
-      .#{$device}\:-.mb-#{$i} {
-        margin-bottom: #{$i}px !important;
-      }
-      .#{$device}\:-.mr-#{$i} {
-        padding-right: #{$i}px !important;
-      }
-      .#{$device}\:-.ml-#{$i} {
-        margin-left: #{$i}px !important;
-      }
+    .gap-x-#{$i}{
+      column-gap: #{$i}px;
     }
   }
 }
 
-// Generate the responsive utility classes for each breakpoint
-@include responsive-utilities($sm, $container-sm, sm);
-@include responsive-utilities($md, $container-md, md);
+@include gap (sm)

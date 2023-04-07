@@ -1,0 +1,39 @@
+{
+  "author": {
+    "id": 1,
+    "name": "Mahir",
+    "image" : "https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "description": "Mern Stack Developer. I have experienced in React js, node js, tailwind css",
+    "location": "Tangail"
+  },
+
+  "socail": 
+    {
+      "facebook": "https://www.facebook.com/developermahir",
+      "linkedin": "https://www.linkedin.com/in/dev-mahir/",
+      "github": "https://github.com/dev-mahir",
+      "twitter": "https://twitter.com/dev-mahir"
+    }
+  ,
+
+  "posts": [
+    {
+      "id": 1,
+      "author": "Mahir",
+      "createdDate": "2022-10-05T14:48:00.000Z",
+      "category": "Web Design",
+      "image": "https://images.unsplash.com/photo-1616587894289-86480e533129?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "title": "16 System Design Concepts I Wish I Knew Before the Interview.",
+      "description": "To excel in system design, one of the most crucial aspects is to develop a deep understanding of fundamental system design concepts such as Load Balancing, Caching, Partitioning, Replication, Databases, and Proxies.Through my own experiences, I have identified 16 key concepts that can make a significant difference in your ability to tackle system design problems. These concepts range from understanding the intricacies of API gateway and mastering load-balancing techniques to grasping the importance of CDNs and appreciating the role of caching in modern distributed systems. By the end of this blog, you will have a comprehensive understanding of these essential ideas and the confidence to apply them in your next interview."
+    },
+    {
+      "id": 2,
+      "author": "Mahir",
+      "category": "Technology",
+      "image": "https://images.unsplash.com/photo-1676272682018-b1435bad1cf0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "createdDate": "2023-01-05T14:48:00.000Z",
+      "title": "Stop doing this on ChatGPT and get ahead of the 99% of its users",
+      "description": "#1. Understand your needs and requirements To order something, you first need to know what you want. Right? So you need to know what you want from the AI, why you want it, and how you want it delivered. This clarity will help you create better prompts and enhance the quality of the output.So first of all, start andardizing all types of outputs you require from AI. A self-made image simulating an artificial intelligence writing a text. Self-made image.Let’s put some examples. I am starting to be active on my Twitter account — so I would like both tweet ideas and Twitter thread structures.I am really active on Medium —so I would like to get inspired to write and generate skeletons for articles.Nice!So from this exercise, I have realized I need 4 different types of outputs.Ideas to write tweets for Twitter.Threads structures for Twitter.Ideas to write on Medium.Article skeletons for Medium.Let’s keep the Twitter structure as an example."
+    }
+  ]
+}

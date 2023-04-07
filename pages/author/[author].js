@@ -4,40 +4,46 @@ import Newsletter from '@/components/Newsletter/Newsletter';
 import Post1 from '@/components/Post/Post1';
 import PostTable from '@/components/Post/PostTable/PostTable';
 import Socail from '@/components/Socail/Socail';
-import Link from 'next/link';
+import { useGetAuthorQuery } from '@/redux/author/authorSlice';
+import Image from 'next/image';
 import React from 'react'
 
 const Author = () => {
-  return (
+
+  const { data, isLoading, isError, isSuccess } = useGetAuthorQuery();
+  if (isLoading) return 'Loading...'
+  if (isError) return "Something went wrong."
+  if (isSuccess) { 
+      return (
     <div className='container py-60'>
       <div className="max-w-800 mx-auto">
 
         <div className='flex gap-x-20 post-card mb-100'>
           <div className=''>
-            <img className='w-110 h-110 br-5 object-cove br-full' src="https://images.pexels.com/photos/5076531/pexels-photo-5076531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+            <Image width={500} height={500} className='w-110 h-110 br-5 object-cove br-full' src={data.image} alt="" />
           </div>
-
           <div className='content'>
-            <h3>Mahir</h3>
+            <h3>{data.name}</h3>
             <div className='mt-6 mb-6'>
-              <span>Tangail</span>  .
+              <span>{data.location}</span>  .
               <span> 5 posts </span>
             </div>
-            <p className='line-clamp-2 mb-10'>Apurba is UI & UX designer by profession, photographer by passion. Solo traveller, blogger, badminton player and movie lover.</p>
+            <p className='line-clamp-2 mb-10'>{data.description}</p>
             <Socail />
           </div>
         </div>
 
-        <div className='mb-50 flex gap-x-20'>
+        {/* <div className='mb-50 flex gap-x-20'>
           <Link className='flex items-center gap-x-7 text-primary  opacity-7 fw-600' href="/author/new-post">  <i class='bx bx-edit'></i> Create Post</Link>
           <Link className='flex items-center gap-x-7 text-primary  opacity-7 fw-600' href="/new-post">  <i class='bx bx-edit'></i> All Post</Link>
         </div>
 
-        <CreatePost/>
+        <CreatePost/> */}
 
         <div className='mb-50'>
-          <PostTable />
+          {/* <PostTable /> */}
         </div>
+
 
         <Post1 />
       </div>
@@ -46,6 +52,11 @@ const Author = () => {
       </div>
     </div>
   )
+  }
+
+
+
+
 }
 
 export default Author;

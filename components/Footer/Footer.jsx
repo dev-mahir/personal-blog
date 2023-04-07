@@ -1,5 +1,6 @@
 import React from 'react'
 import Socail from '../Socail/Socail'
+import moment from 'moment'
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
           <Socail />
         </div>
         <div>
-          <p>©2023 Mahir - All right Reserved.</p>
+          <p>@{moment().year()} Mahir - All right Reserved.</p>
         </div>
       </div>
     </footer>
